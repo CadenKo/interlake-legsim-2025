@@ -2,7 +2,7 @@ class LegSimFormBuilder < ActionView::Helpers::FormBuilder
   def date_time_picker(attribute, options={})
     options.merge!(
       :class => 'date-picker',
-      :value => ( object.__send__(attribute) || Time.now ).to_s(:date_entry)
+      :value => ( object.__send__(attribute) || Time.now ).to_fs(:date_entry)
     )
     text_field( attribute, options )
   end

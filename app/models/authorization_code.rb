@@ -6,7 +6,7 @@ class AuthorizationCode < ActiveRecord::Base
   before_create :set_code
 
   def set_code
-    self.code = generate_code( Time.now.to_s )
+    self.code = generate_code( Time.now.to_fs )
   end
 
   def generate_code( salt )
