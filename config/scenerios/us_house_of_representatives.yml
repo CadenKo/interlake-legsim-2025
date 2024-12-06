@@ -75,13 +75,13 @@ special_settings:
 legislative_types:
   - name: Bill
     abbr: H.R.
-    description: A bill authorizes the spening of money or chage of the law. Requires the approval of the President.
+    description: A bill authorizes the spending of money or change in the law. Requires the approval of the President.
   - name: Resolution
     abbr: H.Res.
-    description: A resolution takes action within the chamber such as a rule change or expresses an non-binding opinion. Does not require Presidental approval.
+    description: A resolution takes an action within the chamber such as a rule change or expresses an non-binding opinion. Does not require Presidental approval.
   - name: Joint Resolution
     abbr: H.J.Res.
-    description: A joint resolution is used to amend the Constitution, requiring a 2/3rds majority in both chambers and 3/4ths of the States.
+    description: A Joint Resolution is used to amend the Constitution, requiring a 2/3rds majority in both chambers and 3/4ths of the States.
 
 parties:
   - name: Democratic Party
@@ -90,9 +90,9 @@ parties:
   - name: Republican Party
     abbr: R
     jurisdiction_description: The Republican Party focuses on ensuring that America remains safe, terrorists are defeated, and democracy flourishes in the world; on expanding opportunities for ownership and investment; on making tax relief permanent and ensuring greater energy independence; on increasing the affordability and accessibility of health care; on promoting works of compassion and strengthening our greatest values; on preparing students for success in life by bringing the benefits of education reform to high schools; and on helping workers adjust to a changing economy by offering flexible training options that meet their individual needs.
-  - name: Independent Party
+  - name: Independents
     abbr: I
-    jurisdiction_description: Not technically a formal party, the Independent Party is an organization for members who do not identify with any of the existing party organizations.
+    jurisdiction_description: Independents are members who do not identify with any of the existing party organizations.
 
 committees:
   - name: Committee on Agriculture

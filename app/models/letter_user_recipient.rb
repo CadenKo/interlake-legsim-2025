@@ -10,10 +10,10 @@ class LetterUserRecipient < ActiveRecord::Base
 
     mail = Mail.new
     
-    mail.from = letter.chamber_role.dear_colleague_envilope_address
+    mail.from = letter.chamber_role.dear_colleague_envelope_address
     mail.sender = 'LegSim Clerk <clerk@legsim.org>'
     mail.reply_to = 'No Reply <no-reply@legsim.org>'
-    mail.to = chamber_role.envilope_address
+    mail.to = chamber_role.envelope_address
     mail.subject = "[LegSim] #{subject}"
     mail.body = message_body
 

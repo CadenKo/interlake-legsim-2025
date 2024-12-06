@@ -75,15 +75,15 @@ class ChamberRole < ActiveRecord::Base
     "#{first_name} #{last_name}"
   end
 
-  def envilope_address
+  def envelope_address
     "\"#{name}\" <#{email}>"
   end
 
-  def dear_colleague_envilope_address
+  def dear_colleague_envelope_address
     "\"#{name}\" <dear-colleague@legsim.org>"
   end
 
-  def clerk_envilope_address
+  def clerk_envelope_address
     "\"#{name}\" <clerk@legsim.org>"
   end
 

@@ -147,11 +147,11 @@ class Vote < ActiveRecord::Base
   def message_header(recipient,action)
 
     msg_header = <<END_OF_MESSAGE_HEADER
-From: #{motion.group.primary_leader ? motion.group.primary_leader.clerk_envilope_address : '"LegSim Clerk" <clerk@legsim.org>'}
+From: #{motion.group.primary_leader ? motion.group.primary_leader.clerk_envelope_address : '"LegSim Clerk" <clerk@legsim.org>'}
 Sender: "LegSim Clerk" <clerk@legsim.org>
 Reply-To: <no-reply@legsim.org>
 Precedence: list
-To: #{recipient.envilope_address}
+To: #{recipient.envelope_address}
 Subject: [LegSim] Vote Regarding #{referral.legislation.reference} has #{action}
 
 END_OF_MESSAGE_HEADER
