@@ -5,5 +5,7 @@
 <p>And if you would like to learn a little more about the US Congress and Legsim (including some resources for students), please check out <a href="http://info.legsim.org">info.legsim.org</a> (also linked on the main LegSim home page).</p>
 
 <p><%= link_to 'Confirm your account', confirmation_url(@resource, confirmation_token: @token) %></p>
+<!-- Thanks to confirmation_url being a Devise method, this redirects automatically to the user login page. 
+We could override this and send to the system page, but there's not much value in this.-->
 
 <p>For any assistance, please contact us at <a href="mailto:support@legsim.org">support@legsim.org</a>. Thanks for using LegSim!</p>

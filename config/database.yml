@@ -7,14 +7,14 @@
 default: &default
   adapter: mysql2
   encoding: utf8mb4
-  username: root
+  username: railsuser
   password: root
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 50000
 
 development:
   <<: *default
-  username: root
+  username: railsuser
   database: legsim
   password: root
   #socket: /tmp/mysql.sock
