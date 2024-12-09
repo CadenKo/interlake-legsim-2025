@@ -186,3 +186,9 @@ next, create a new chamber by clicking 'Create New Chamber' and filling in the f
 now you can create normal users (students) by going to the root / route, which will redirect you to the user sign in page. click 'Create New Account' and fill in the form. it may error out, but that's fine. you can verify that the user was created by going to `/system/users` and checking the chamber's number of users.
 
 once a user is created, you can properly log in as a student.
+
+If a database error with scenario or scenerio as an undefined method shows up, paste
+```bash
+ALTER TABLE chambers RENAME COLUMN scenerio TO scenario;
+```
+into MySQL instead of rebuilding the db.
