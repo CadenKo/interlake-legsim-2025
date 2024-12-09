@@ -97,6 +97,7 @@ Could not find nokogiri-1.13.10, mini_portile2-2.8.8 in locally installed gems
 
 then delete the offenders from gemfile.lock and/or gemfile and replace them with the most recent versions : the latter controls what gems to install (and by extension their dependencies), while the gemfile.lock controls the exact versions to install (as to match other installations perfectly). Traditionally, one deletes the gemfile.lock and restarts clean from the gemfile, but it is several years or in some cases decades out of date such that doing so causes major errors.
 Example:
+
 ```bash
 # Deleted:
 nokogiri (1.13.10)
@@ -121,9 +122,7 @@ then edit rails credentials:
 EDITOR="code --wait" rails credentials:edit
 ```
 
-it should open up a new vscode tab with the rails credentials file. copy the contents of [config/credentials.yml.example](config/credentials.yml.example) below the `secret_key_base:` line and paste it into the file.
-
-fill in `root` for the gmail and database usernames and passwords. ignore elavon.
+it should open up a new vscode tab with the rails credentials file. copy the contents of [config/credentials.yml.example](config/credentials.yml.example) below the `secret_key_base:` line and paste it into the file. you do not need to actually fill in the values for now.
 
 save and close the file. you should see `File encrypted and saved.` in the terminal.
 
@@ -135,8 +134,6 @@ install mysql-server:
 sudo apt install mysql-server
 ```
 
-edit the [config/database.yml](config/database.yml) file. in the default and development sections, change the username to `railsuser` and the password to `root`.  
-
 now go into mysql and create a user with the username `railsuser` and password `root`.
 
 ```bash
@@ -146,6 +143,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'railsuser'@'localhost';
 FLUSH PRIVILEGES;
 exit
 ```
+
+edit the [config/database.yml](config/database.yml) file. in the default and development sections, make sure credentials are set to the same as the user you just created in mysql (in this case username `railsuser` and password `root`).
 
 create and migrate the database:
 
@@ -158,7 +157,9 @@ rails db:schema:load
 try to run the server:
 
 ```bash
-rails server (or rails s)
+rails server 
+OR
+rails s
 ```
 
 now you should be able to access the site at the link provided in the terminal, something like `http://127.0.0.1:3000/`.
@@ -177,18 +178,4 @@ you can create a new user by running:
 SystemUser.create(email:"user@example.com", password:"password", password_confirmation: "password")
 ```
 
-now you should be able to log in as a system user. note that all of the login buttons are broken and you will have to press enter inside a text field to submit the form.
-
-once you're logged in, you can create a new course by clicking on the 'Courses' tab and then clicking 'Create New Course' and filling in the form.
-
-next, create a new chamber by clicking 'Create New Chamber' and filling in the form.
-
-now you can create normal users (students) by going to the root / route, which will redirect you to the user sign in page. click 'Create New Account' and fill in the form. it may error out, but that's fine. you can verify that the user was created by going to `/system/users` and checking the chamber's number of users.
-
-once a user is created, you can properly log in as a student.
-
-If a database error with scenario or scenerio as an undefined method shows up, paste
-```bash
-ALTER TABLE chambers RENAME COLUMN scenerio TO scenario;
-```
-into MySQL instead of rebuilding the db.
+now, go to /system. you should be able to log in as a system user using the credentials in the command above. note that some login buttons are broken and you might have to press enter inside a text field to submit the form.
