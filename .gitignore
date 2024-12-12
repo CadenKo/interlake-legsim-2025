@@ -25,5 +25,5 @@ storage/*
 
 # Ignore master key for decrypting credentials and more and the actual credential files.
 /config/master.key
-/config/yml.enc
+/config/credentials.yml.enc
 
