@@ -5,13 +5,13 @@ contents:
     <p>A Caucus or Congressional Member Organization (CMO) is an informal group of members that organizes&nbsp;to pursue common goals.</p>
     <p>Any member can create a caucus and becomes the leader of that caucus. Each caucus includes management tools for promoting communications among members. Members often belong to multiple caucuses.</p>
     <p><span style="text-decoration: underline;">Links to Congressional resources</span></p>
-    <p><a href="http://cha.house.gov/member_orgs.aspx">House Administration Committee listing of Congressional Caucuses</a></p>
+    <p><a href="https://cha.house.gov/congressional-member-and-staff-organizations">House Listing of Congressional Caucuses</a></p>
 - reference: create-party
   copy: |-
     <p>A Political Party is a type of caucus. In Congress, party members work together to pursue common objectives, often by voting as a block on matters of leadership selection or procedure.</p>
     <p>In LegSim, Any member can create a party. Members can only belong to one party, and must seek the leader's&nbsp; permission to join.</p>
     <p><span style="text-decoration: underline;">Links to Congressional resources</span></p>
-    <p><a href="http://www.dems.gov/">House Democratic Caucus</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.gop.gov/">House Republican Caucus</a></p>
+    <p><a href="https://www.dems.gov/">House Democratic Caucus</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://www.gop.gov/">House Republican Caucus</a></p>
     <p><a href="http://src.senate.gov/public/">Senate Republican Caucus</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://democrats.senate.gov/">Senate Democratic Caucus</a></p>
 - reference: committee-request-info
   copy: |-
@@ -23,7 +23,7 @@ contents:
     <p>Congress divides its workload among approximately 200 committees and subcommittees. This workload includes evaluating legislative proposals, overseeing the management of existing programs, and investigating new issues.&nbsp;</p>
     <p>The issue responsibilities of committees are specified in the rules of the House and Senate (below). The chamber leadership, with the advice of the parliamentarian typically refers a bill to just one committee. The exceptions (multiple referrals) usually involve legislation that address issues that cut across the jurisdictions of multiple committees.</p>
     <p><a href="http://info.legsim.org/resources/House%20Committee%20Assignment.pdf">House Committees: Assignment Process</a></p>
-    <p><a href="http://info.legsim.org/resources/House%20Committee%20Jurisdictions.pdf">House Committee Jurisdictions</a>&nbsp;&nbsp;&nbsp;<a href="http://www.access.gpo.gov/congress/senate/sclinks.html">Senate Committee Jurisdictions</a></p>
+    <p><a href="http://info.legsim.org/resources/House%20Committee%20Jurisdictions.pdf">House Committee Jurisdictions</a>&nbsp;&nbsp;&nbsp;<a href="https://www.govtrack.us/congress/committees/">Senate Committee Jurisdictions</a></p>
     <p><a href="http://info.legsim.org/resources/AuthorizationAppropriations.pdf">Authorization-Appropriations Process</a></p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
@@ -47,9 +47,9 @@ contents:
     <p>&nbsp;</p>
     <p><a href="http://info.legsim.org/resources/Bills%20and%20Resolutions.pdf">Bills and Resolutions: Examples of how each kind is used</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
     <p><a href="http://www.house.gov/legcoun/strokoff.shtml">How&nbsp;laws are made</a></p>
-    <p><a href="http://www.gpoaccess.gov/uscode/browse.html">U.S. Code</a>: The law of the land &nbsp;</p>
-    <p><a href="http://www.whitehouse.gov/omb/">U.S Budget:</a> How much do things cost?</p>
-    <p><a href="http://thomas.loc.gov/">Thomas</a>: Research congressional legislation&nbsp;&nbsp;&nbsp;&nbsp;</p>
+    <p><a href="https://uscode.house.gov/">U.S. Code</a>: The law of the land &nbsp;</p>
+    <p><a href="https://www.whitehouse.gov/omb/budget/">U.S Budget:</a> How much do things cost?</p>
+    <p><a href="https://www.congress.gov/">Congress.gov</a>: Research congressional legislation (formerly thomas.gov)</p>
 - reference: leadership-nominations-info
   copy: |-
     <p>This page offers legislators the opportunity to nominate and indicate support candidates for chamber leadership positions.</p>
@@ -81,14 +81,14 @@ contents:
     <p><strong>About Dear Colleague letters</strong></p>
     <p>In LegSim there are two kinds of dear colleague emails. Ordinary 'dear colleagues' provide a means of communication among legislators and legislative groups. You&nbsp;are encouraged to use&nbsp;ordinary dear colleagues as often as you like.&nbsp;</p>
     <p>"Special" dear colleagues sent&nbsp;to the entire chamber should be restricted to&nbsp;general announcements or to seek general support for legislation, etc. They should <span style="text-decoration: underline;">not</span> be used to carry on a conversation that everyone in the class is forced to read. In 2008, Congress implemented&nbsp;an e-dearcolleague email system that looks very similar to&nbsp;what LegSim has had for the past 8 years!</p>
-    <p>&nbsp;<a href="http://digital.library.unt.edu/govdocs/crs//data/2005/upl-meta-crs-6161/RS21667_2005Jan04.pdf">Dear Colleague Letters: A Brief Overview</a></p>
+    <p>&nbsp;<a href="https://crsreports.congress.gov/product/pdf/RL/RL34636">Dear Colleague Letters: A Brief Overview</a></p>
 - reference: browse-legislation
   copy: |-
     <p><strong>Browse Submitted Legislation</strong></p>
     <p>All submitted legislation is listed here. A bill can have only one sponsor. However, other legislators can indicate their support for a bill by co-sponsoring it.</p>
     <p>The Speaker, in consultation with the Parliamentarian, refers each bill to committee for initial consideration. For information about committee consideration, consult the Committees page.</p>
     <p><a href="http://assets.opencrs.com/rpts/98-458_19990803.pdf">&nbsp;Introducing a House Bill or Resolution</a></p>
-    <p><a href="http://thomas.loc.gov/bss/d111/sponlst.html">Member Sponsorship and cosponsorship activities in Congress</a></p>
+    <p><a href="https://crsreports.congress.gov/product/pdf/RS/98-279/">Member Sponsorship and cosponsorship activities in Congress</a></p>
     <p>&nbsp;</p>
 - reference: committee-directory
   copy: |-
@@ -103,7 +103,7 @@ contents:
     <p><strong>Secondary referrals</strong>. A bill may also be referred to  secondary committees of referral. Bills can be placed on the calendar even if  they have not been reported by secondary committees of referral.</p>
     <p><a href="http://wikileaks.org/leak/crs/RS20794.pdf">The Committee System</a></p>
     <p><a href="http://www.rules.house.gov/archives/RS20465.pdf">House Committee Organization and Process</a></p>
-    <p><a href="http://www.rules.house.gov/archives/98-169.pdf">Committee Reports: Required Conten</a>ts</p>
+    <p><a href="https://crsreports.congress.gov/product/pdf/R/R47039">Committee Reports: Required Conten</a>ts</p>
 - reference: committee-directory
   copy: |-
     <p>&nbsp;</p>
@@ -128,7 +128,7 @@ contents:
   copy: |-
     <p>More tools to come!</p>
     <p><a href="http://assets.opencrs.com/rpts/RS20881_20041129.pdf">Party Leaders in  the House</a></p>
-    <p><a href="http://rules.house.gov/Archives/comm_jurisdiction.htm">House Committee  Jurisdictions</a></p>
+    <p><a href="https://www.govtrack.us/congress/committees/">House Committee  Jurisdictions</a></p>
 - reference: committee-referral
   copy: |-
     <p>Every bill must be referred to at least one primary committee of referral within 24 hours of introduction.</p>
@@ -195,7 +195,7 @@ contents:
     <p>The draft&nbsp;becomes available to other committee members to review. Committee members can then recommend revisions.&nbsp;Once a majority of members votes to report the bill, the committee chair produces the&nbsp;final version and the bill is automatically sent to the floor.</p>
     <p>The final committee report must include the voting positions of committee members on the question of whether to report the legislation. Committee members&nbsp;also have the&nbsp;option of inserting&nbsp;dissenting viewpoints in the final version.&nbsp;</p>
     <p>This document describes congressional committee reports in detail. Yours should reflect the intent if not the actual substance of an actual congressional committee report.</p>
-    <p><a href="http://www.rules.house.gov/archives/98-169.pdf">Committee Reports: Required Conten</a>ts</p>
+    <p><a href="https://crsreports.congress.gov/product/pdf/R/R47039">Committee Reports: Required Conten</a>ts</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>&nbsp;</p>
