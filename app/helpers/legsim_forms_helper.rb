@@ -83,7 +83,7 @@ module LegsimFormsHelper
     if options[:simple]
       super( value, options )
     else
-      "<div class='button #{options[:size]}'><div class='left'><div class='right'>#{ super( value, options ) }</div></div></div>".html_safe
+      "<div class='button #{options[:size]}'>#{ super( value, options ) }</div>".html_safe
     end
   end
 
@@ -94,7 +94,7 @@ module LegsimFormsHelper
       :simple => false
     }.merge(options)
 
-    "<div class='button #{options[:size]}'><div class='left'><div class='right'>#{ link_to( name, url, options ) }</div></div></div>".html_safe
+    "<div class='button #{options[:size]}'>#{ link_to( name, url, options ) }</div>".html_safe
   end
 
   def tag(name, options = nil, open = false, escape = true)

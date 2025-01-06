@@ -1,5 +1,8 @@
 {
-    "cSpell.enabledFileTypes": {
-        "yaml": true
-    }
+	"cSpell.enabledFileTypes": {
+		"yaml": true
+	},
+	"files.associations": {
+		"*.css.erb": "css"
+	}
 }
