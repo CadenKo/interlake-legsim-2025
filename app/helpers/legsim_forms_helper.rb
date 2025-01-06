@@ -83,7 +83,7 @@ module LegsimFormsHelper
     if options[:simple]
       super( value, options )
     else
-      "<div class='button #{options[:size]}'>#{ super( value, options ) }</div>".html_safe
+      "<div class='button #{options[:size]}'>#{ content_tag(:button, value, options.merge(type: 'submit')) }</div>".html_safe
     end
   end
 
