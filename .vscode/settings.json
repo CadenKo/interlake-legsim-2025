@@ -4,5 +4,6 @@
 	},
 	"files.associations": {
 		"*.css.erb": "css"
-	}
+	},
+	"editor.indentSize": "4"
 }
