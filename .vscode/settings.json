@@ -4,5 +4,7 @@
 	},
 	"files.associations": {
 		"*.css.erb": "css"
-	}
+	},
+	"prettier.tabWidth": 4,
+	"prettier.useTabs": true
 }
