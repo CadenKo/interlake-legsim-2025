@@ -37,12 +37,13 @@
         <th style="width: 100%"></th>
       </tr>
       <% @party.discussions.each do |discussion| %>
+        <% next if discussion.name.blank? %>
         <tr>
           <td><%= discussion.name %></td>
           <td>
             <% if discussion.private %>
               <%= form_for discussion do |f| %>
-                <%= f.hidden_field :private, :value => '0' %>
+                <%= f.hidden_field :private, :value => false %>
                 <%= f.submit "Make Public", :size => 'ninty', :class => 'btn blue-btn' %>
               <% end %>
             <% else %>
