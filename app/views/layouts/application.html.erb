@@ -134,8 +134,10 @@
       <div class="submenu">
         <div class="wrapper">
           <div class="sm-wrapper" id="members">
-            <div class="sm-item-pic">
-              <a href="/members"><%= image_tag 'new/seats.png' %></a>
+            <div class="sm-item Members">
+              <div class="icon">
+                <a href="/members" class="div-link"></a>
+              </div>
             </div>
           </div>
 
@@ -247,8 +249,11 @@
         </div>
 
         <div class="sm-wrapper" id="whitehouse">
-        <div class="sm-item-pic">
-
+            <div class="sm-item executive">
+              <div class="icon">
+                <a href="/executives/<%= @exec_id %>" title="<%= @current_chamber.setting('executive_building') %>" class="div-link"></a>
+              </div>
+            </div>
         <% if @current_chamber.setting('has_executive') == 'Unitary' or @current_chamber.setting('has_executive') == 'Multiple' %>
           <div id="nav_<%= @current_chamber.setting('executive_building').parameterize(separator: '_') %>">
           <% @current_chamber.chamber_roles.each do |f| %>
@@ -256,10 +261,8 @@
               <% @exec_id = f.id %>
             <% end %>
           <% end %>
-          <a href="/executives/<%= @exec_id %>" title="<%= @current_chamber.setting('executive_building') %>"><%= image_tag 'new/wh_icon.png' %></a><!--<ul>
-          <li><a href="/" title="">Link</a></li></ul>--></div>
+          </div>
         <% end %>
-        </div>
         </div>
         </div>
       </div>
@@ -268,7 +271,7 @@
         <div class="wrapper">
           <div class="bc-holder" style='font-size: 28px'>
             <a class="breadcrumb"><%= @page_title %></a>
-            <span class="delimeter">&gt;</span>
+            <span class="delimiter">&gt;</span>
             
             <% if @page_description %>
               <a class="breadcrumb"><%= @page_description %></a>
