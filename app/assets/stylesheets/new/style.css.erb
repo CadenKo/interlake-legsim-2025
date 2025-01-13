@@ -375,21 +375,24 @@ header .bigmenu .wrapper {
 	height: 100%;
 	font-size: 0;
 	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
 }
-/* line 215, ../sass/_head_and_foot.scss */
+/* line 215, ../sass/_head_and_foot.scss from 208px and 10 padding bottom to 150 and 5*/
 header .bigmenu .bm-item {
 	cursor: pointer;
-	width: 208px;
-	padding-bottom: 10px;
+	width: 150px;
+	padding-bottom: 5px;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
 	height: 100%;
+	flex: 1 1;
 }
-/* line 223, ../sass/_head_and_foot.scss */
+/* line 223, ../sass/_head_and_foot.scss from 9 to 5 px padding, to 50px max height*/
 header .bigmenu .bm-item .icon {
-	max-height: 70px;
-	padding-top: 9px;
+	max-height: 50px;
+	padding-top: 5px;
 }
 /* line 231, ../sass/_head_and_foot.scss */
 .profile-page header .bigmenu .bm-item svg * {
@@ -958,7 +961,7 @@ h3 + p {
 	text-decoration: none;
 	color: #fff;
 	text-transform: capitalize;
-	font-family: "Serifa";
+	/* font-family: "Serifa"; */
 }
 /* line 191, ../sass/_content.scss */
 .btn.blue-btn {
