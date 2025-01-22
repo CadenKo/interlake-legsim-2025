@@ -1,85 +1,5 @@
 /* line 5, c:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -153,7 +73,17 @@ summary {
 /* end of ie */
 /*======================================================== _head_and_foot.scss: included in main&inner at the top contains all shared styles =======================================================*/
 /* ClearFix abstract class usage: .my-selector { @extend %clearfix; } */
-/*@font-face { font-family: 'Serifa'; src: url("../font/SerifaStd-Roman.eot?#iefix") format("embedded-opentype"), url("../font/SerifaStd-Roman.otf") format("opentype"), url("../font/SerifaStd-Roman.woff") format("woff"), url("../font/SerifaStd-Roman.ttf") format("truetype"), url("../font/SerifaStd-Roman.svg#SerifaStd-Roman") format("svg"); font-weight: normal; font-style: normal; }*/
+/* Copied from login page. */
+@font-face {
+	font-family: 'Serifa';
+	src: url(<%= asset_path "SerifaStd-Roman.eot?#iefix" %>) format("embedded-opentype"),
+		 url(<%= asset_path "SerifaStd-Roman.otf" %>) format("opentype"),
+		 url(<%= asset_path "SerifaStd-Roman.woff" %>) format("woff"),
+		 url(<%= asset_path "SerifaStd-Roman.ttf" %>) format("truetype"),
+		 url(<%= asset_path "SerifaStd-Roman.svg#SerifaStd-Roman" %>) format("svg");
+	font-weight: normal;
+	font-style: normal;
+  }
 /*================================================== Sticky footer CSS $foot-height declared in _base.scss ===============================================*/
 /* line 41, ../sass/_head_and_foot.scss */
 html,
@@ -375,21 +305,24 @@ header .bigmenu .wrapper {
 	height: 100%;
 	font-size: 0;
 	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
 }
-/* line 215, ../sass/_head_and_foot.scss */
+/* line 215, ../sass/_head_and_foot.scss from 208px and 10 padding bottom to 150 and 5*/
 header .bigmenu .bm-item {
 	cursor: pointer;
-	width: 208px;
-	padding-bottom: 10px;
+	width: 150px;
+	padding-bottom: 5px;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
 	height: 100%;
+	flex: 1 1;
 }
-/* line 223, ../sass/_head_and_foot.scss */
+/* line 223, ../sass/_head_and_foot.scss from 9 to 5 px padding, to 50px max height*/
 header .bigmenu .bm-item .icon {
-	max-height: 70px;
-	padding-top: 9px;
+	max-height: 50px;
+	padding-top: 5px;
 }
 /* line 231, ../sass/_head_and_foot.scss */
 .profile-page header .bigmenu .bm-item svg * {
@@ -958,7 +891,7 @@ h3 + p {
 	text-decoration: none;
 	color: #fff;
 	text-transform: capitalize;
-	font-family: "Serifa";
+	font: 16px "Serifa";
 }
 /* line 191, ../sass/_content.scss */
 .btn.blue-btn {
