@@ -18,14 +18,7 @@
   <%= stylesheet_link_tag "new/new" %>
   <%= javascript_include_tag "application" %>
   <script type="text/javascript" src="/assets/tinymce.js"></script>
-  <script>
-    tinymce.init({
-      selector:'textarea.tinymce',
-      menubar: 'edit',  
-      plugins: 'paste',
-      paste_block_drop: true
-    });
-  </script>
+  <%= tinymce %>
 
   <!--Updated JS and CSS-->
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -270,9 +263,9 @@
         <div class="wrapper">
           <div class="bc-holder" style='font-size: 28px'>
             <a class="breadcrumb"><%= @page_title %></a>
+            <span class="delimiter">&gt;</span>
             
             <% if @page_description %>
-              <span class="delimiter">&gt;</span>
               <a class="breadcrumb"><%= @page_description %></a>
             <% end %>
           </div>
