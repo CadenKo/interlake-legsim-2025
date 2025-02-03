@@ -155,7 +155,7 @@
             <li><b><%= @member.chamber.floor.primary_group_leader.title %></b> <%= link_to_user( @member.chamber.floor.primary_leader ) %></li>
           <% end %>
           <li><a href="/members">Membership Directory</a></li>
-          <li><b>Member's Announcement</b> <%= @member.chamber.floor.private_announcement ? @member.chamber.floor.private_announcement : "<p>No Announcement</p>" %></li>
+          <li><b>Member's Announcement</b> <%= sanitize (@member.chamber.floor.private_announcement ? @member.chamber.floor.private_announcement : "<p>No Announcement</p>"), attributes: ['style'] %></li>
         </ul>
 
         <% unless @member.section.nil? %>
@@ -165,7 +165,7 @@
             <% if @member.section.primary_group_leader %>
               <li><b><%= @member.section.primary_group_leader.title %></b> <%= link_to_user( @member.section.primary_leader ) %></li>
             <% end %>
-            <li><b>Member's Announcement</b> <%= @member.section.private_announcement ? @member.section.private_announcement : "<p>No Announcement</p>" %></li>
+            <li><b>Member's Announcement</b> <%= sanitize (@member.section.private_announcement ? @member.section.private_announcement : "<p>No Announcement</p>"), attributes: ['style'] %></li>
           </ul>
 
         <% end %>
@@ -185,7 +185,7 @@
                 <li><b><%= committee.primary_group_leader.title %></b> <%= link_to_user( committee.primary_leader ) %></li>
               <% end %>
               <li><b><%= committee.referrals.hearing.count %></b> Open <%= committee.referrals.hearing.count == 1 ? 'Hearing' : 'Hearings' %></li>
-              <li><b>Member's Announcement</b> <%= committee.private_announcement ? committee.private_announcement : "<p>No Announcement</p>" %></li>
+              <li><b>Member's Announcement</b> <%= sanitize (committee.private_announcement ? committee.private_announcement : "<p>No Announcement</p>"), attributes: ['style'] %></li>
             </ul>
           <% end %>
         <% end %>
