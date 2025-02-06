@@ -5,7 +5,7 @@ class Discussion < ActiveRecord::Base
   belongs_to :last_comment, :class_name => "Comment", optional: true
 
   belongs_to :creator, :class_name => "ChamberRole", optional: true
-  belongs_to :referral
+  belongs_to :referral, optional: true
 
   scope :open_discussions,    -> { where( open: true ) }
   scope :closed_discussions,  -> { where( open: false ) }

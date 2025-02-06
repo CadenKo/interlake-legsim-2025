@@ -1,5 +1,5 @@
 LEGSIM_COPYRIGHT = '2001 - 2020'
-
+# https://docs.ruby-lang.org/en/master/Time.html for format
 Time::DATE_FORMATS[:long_with_time] = "%B %e, %Y %I:%M %p"
 Time::DATE_FORMATS[:long] = "%B %e, %Y"
 Time::DATE_FORMATS[:short_with_time] = "%b %e, %I:%M %p"

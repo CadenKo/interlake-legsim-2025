@@ -15,7 +15,7 @@ class DiscussionsController < ApplicationController
       :open => true, :private => true,
       :creator => @current_chamber_role
     )
-    discussion.save
+    discussion.save!
 
     if discussion.group.is_caucus?
       flash_message("New caucus discussion has been started.")
@@ -26,7 +26,7 @@ class DiscussionsController < ApplicationController
     elsif discussion.group.is_committee?
 
       discussion.private = false
-      discussion.save
+      discussion.save!
 
       flash_message("New committee discussion has been started.")
       redirect_to manage_discussions_committee_path(discussion.group)
