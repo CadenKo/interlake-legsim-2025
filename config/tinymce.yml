@@ -1,10 +1,10 @@
 plugins: 
 - fullscreen
 - autosave
+- lists
 menubar: 'file edit insert view format table tools help'
 toolbar:
-  - styleselect | bold italic underline | undo redo | fullscreen | restoredraft
-  - image | link
-
+  - styleselect |  undo redo | blocks | bold italic underline | numlist bullist | restoredraft | fullscreen
+  - image | link 
 browser_spellcheck: true
 license_key: 'gpl'
