@@ -51,9 +51,9 @@
 
     <div id="leg-text">
       <div class="the-content">
-      <pre style ="white-space: pre-wrap; word-break: keep-all;">
+      <%# <pre style ="white-space: pre-wrap; word-break: keep-all;"> %>
         <%= sanitize @legislation.submission_text.primary_text, attributes: ['style'] %>
-      </pre>
+      <%# </pre> %>
       </div>
     </div>
 
