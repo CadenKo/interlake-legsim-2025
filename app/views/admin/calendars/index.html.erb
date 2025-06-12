@@ -42,7 +42,7 @@ The chamber leader on the other hand, is only able to schedule votes based on th
   <div class="panel" id="tab-calendar-<%= calendar.id %>">
 
     <% if calendar.referrals.empty? %>
-      <h2>There is no legislation on this calendar.</h2>
+      <h3>[!] There is no legislation on calendar <%= calendar.name %>.</h3>
     <% else %>
 
       <%= form_for( [:admin,calendar], :url => update_positions_admin_calendar_path( calendar ) ) do |f| %>

@@ -66,7 +66,7 @@
       <% @floor.calendars.each do |calendar| %>
         <li><a href="#tab-calendar-<%= calendar.id %>"><%= calendar.name %> (<%= calendar.calendar_referrals.count %>)</a></li>
               <% if calendar.referrals.empty? %>
-                <!-- <h2>There is no legislation on this calendar</h2> -->
+                <h3>[!] There is no legislation on this calendar.</h3>
               <% else %>
                 <ul>
                   <% calendar.referrals.each do |referral| %>

@@ -23,7 +23,7 @@
         <%= sanitize calendar.description, attributes: ['style'] %>
 
         <% if calendar.referrals.includes( :legislation ).empty? %>
-          <h2>There is no legislation on this calendar</h2>
+          <h3>[!] There is no legislation on calendar <%= calendar.name %>.</h3>
         <% else %>
           <% calendar.referrals.each do |referral| %>
 
