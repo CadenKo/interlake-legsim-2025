@@ -28,6 +28,7 @@
         <%= form_field do %>
         <%= f.hidden_field :discussion_id, :value => @discussion.id %>
           <%= f.text_area :content, :class => "tinymce"%>
+          <%= tinymce :alternate %>
         <% end %>
       </fieldset>
         <%= f.submit "Post Comment", :size => 'fifty', :class => 'btn blue-btn' %>
